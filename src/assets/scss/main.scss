@@ -1,0 +1,143 @@
+// Customizations Here (Optional)
+
+// Bulma Import
+@import '~bulma';
+@import '~bulma/sass/utilities/initial-variables';
+@import '~bulma/sass/utilities/derived-variables';
+@import '~bulma/sass/utilities/mixins';
+
+@include tablet {
+	.mycard .ribbon::before {
+		height: 30px;
+	}
+	.title-social {
+		padding-top: 8px;
+		padding: 0 auto;
+	}
+	.title-section {
+		padding-bottom: 50px;
+		padding-top: 50px;
+  	}
+}
+
+@include mobile {
+  .mycard .ribbon::before {
+    height: 30px;
+  }
+  .title-social {
+    padding-top: 8px ;
+    padding: 0 auto;
+  }
+  html {
+    font-size: 12px;
+  }
+}
+
+.card-wrapper-img {
+	margin: -15% 0 0 0;
+}
+
+.splide__arrow--prev {
+  left: -2em;
+}
+.splide__arrow--next {
+  right: -2em;
+}
+.splide__pagination {
+  bottom: -2em;
+}
+
+.card {
+  background-color: black;
+  border-radius: 1.25rem;
+}
+
+.radio-button {
+  display: flex;
+}
+
+.subtitle-contact {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title-contact {
+  font-family: "Gilroy", sans-serif;
+}
+
+.btn-submit {
+  background-color: #007de7;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  float: left;
+}
+
+.footer {
+  padding-bottom: 20px;
+  background-color: white;
+}
+
+.btn-footer-email {
+  background: #007de7;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.btn-connect {
+  background-color: #007de7;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.connect-button {
+  font-size: 1rem;
+}
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover, 
+a.navbar-item:visited,
+a.navbar-item:visited {
+  background-color: transparent;
+}
+
+.navbar-burger span {
+	width: 36px;
+	left: calc(50% - 16px);
+}
+
+.navbar-burger span:nth-child(1) {
+  top: calc(50% - 12px);
+}
+.navbar-burger span:nth-child(3) {
+  top: calc(50% + 10px);
+}
+.navbar-burger.is-active span:nth-child(1) {
+  transform: translateY(11px) rotate(45deg);
+}
+.navbar-burger.is-active span:nth-child(3) {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+.avatar-desc {
+  padding-left: 12px;
+  font-size: 0.875rem;
+}
+
+.description {
+  border-bottom: 1px solid black;
+}
+
+ul {
+  border-bottom-color: black;
+}
+.tabs {
+  margin-bottom: 0px;
+}
